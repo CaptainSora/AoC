@@ -1,5 +1,5 @@
 def day02a():
-    with open("day02_input.txt", 'r') as f:
+    with open("2020/day02_input.txt", 'r') as f:
         passwords = f.read().strip().split('\n')
         passwords = [
             line.strip().replace('-', ' ').replace(':', '').split(' ') 
@@ -16,7 +16,7 @@ def day02a():
     return counter
 
 def day02b():
-    with open("day02_input.txt", 'r') as f:
+    with open("2020/day02_input.txt", 'r') as f:
         passwords = f.read().strip().split('\n')
         passwords = [
             line.strip().replace('-', ' ').replace(':', '').split(' ')

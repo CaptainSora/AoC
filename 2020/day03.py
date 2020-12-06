@@ -1,7 +1,7 @@
 from math import prod
 
 def day03a():
-    with open("day03_input.txt", 'r') as f:
+    with open("2020/day03_input.txt", 'r') as f:
         trees = [row.strip() for row in f.read().strip().split('\n')]
     width = len(trees[0])
     
@@ -14,7 +14,7 @@ def day03a():
     return counter
 
 def day03b():
-    with open("day03_input.txt", 'r') as f:
+    with open("2020/day03_input.txt", 'r') as f:
         trees = [row.strip() for row in f.read().strip().split('\n')]
     width = len(trees[0])
     height = len(trees)

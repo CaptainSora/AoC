@@ -1,5 +1,5 @@
 def day01a():
-    with open("day01_input.txt", 'r') as f:
+    with open("2020/day01_input.txt", 'r') as f:
         entries = [int(num.strip()) for num in f.read().split()]
 
     for num in entries:
@@ -7,7 +7,7 @@ def day01a():
             return num * (2020 - num)
 
 def day01b():
-    with open("day01_input.txt", 'r') as f:
+    with open("2020/day01_input.txt", 'r') as f:
         entries = [int(num.strip()) for num in f.read().split()]
 
     for a in range(len(entries)):
