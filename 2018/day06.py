@@ -43,7 +43,6 @@ def day06b():
         ]
     
     size = max([max(p[0], p[1]) for p in points])
-    grid = [0] * (size ** 2)
     counter = 0
     for i in range(size):
         for j in range(size):
