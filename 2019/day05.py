@@ -44,7 +44,6 @@ def day05b():
     input = 5
     pos = 0
     while(str(opcode[pos])[-2:] != "99"):
-        a, b, c = opcode[pos+1:pos+4]
         instr = f'{opcode[pos]:05}'
         if instr[-2:] == '01':
             a, b, c = opcode[pos+1:pos+4]
