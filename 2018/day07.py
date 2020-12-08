@@ -13,7 +13,6 @@ def day07a():
 		order = [instr for instr in order if instr[0] != ready]
 	return build_order
 
-
 def day07b():
 	with open("2018/day07_input.txt", "r") as f:
 		order = [[row[5], row[36]] for row in f.read().strip().split('\n')]
