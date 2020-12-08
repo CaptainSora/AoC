@@ -7,5 +7,5 @@ def initialize(year, day):
             f'print(day{day:02}())\n'
         )
 
-for i in range(1, 26):
-    initialize(2015, i)
+for i in range(4, 26):
+    initialize(2017, i)
