@@ -1,4 +1,4 @@
-def day03a():
+def day06a():
     with open("2020/day06_input.txt", 'r') as f:
         answers = [
             group.strip().split('\n')
@@ -14,7 +14,7 @@ def day03a():
         counts += sum([x > 0 for x in questions])
     return counts
 
-def day03b():
+def day06b():
     with open("2020/day06_input.txt", 'r') as f:
         answers = [
             group.strip().split('\n')
@@ -30,5 +30,5 @@ def day03b():
         counts += sum([x == len(group) for x in questions])
     return counts
 
-print(day03b())
+print(day06b())
         
