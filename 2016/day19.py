@@ -1,5 +1,9 @@
-def day19():
+def day19a():
 	with open("2016/day19_input.txt", "r") as f:
 		pass
 
-print(day19())
+def day19b():
+	with open("2016/day19_input.txt", "r") as f:
+		pass
+
+print(day19a())
