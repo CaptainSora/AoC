@@ -43,18 +43,17 @@ def day12b():
 	
 	def pos_add(p, q):
 		return [p[0] + q[0], p[1] + q[1]]
+	
+	def pos_rotate(p):
+		return [p[1], -1 * p[0]]
 
 	for i in instructions:
 		if i[0] in "LR":
 			turn = int(int(i[1:])/90) % 4
 			if i[0] == "L":
 				turn = 4 - turn
-			if turn == 1:
-				waypoint = [waypoint[1], -1 * waypoint[0]]
-			elif turn == 2:
-				waypoint = pos_mult(waypoint, -1)
-			elif turn == 3:
-				waypoint = [-1 * waypoint[1], waypoint[0]]
+			for _ in range(turn):
+				waypoint = pos_rotate(waypoint)
 		elif i[0] == "F":
 			mag = int(i[1:])
 			pos = pos_add(pos, pos_mult(waypoint, mag))
