@@ -10,7 +10,7 @@ def day06a():
         questions = [0] * 26
         for person in group:
             for char in person:
-                questions[ord(char) - 97] += 1
+                questions[ord(char) - ord('a')] += 1
         counts += sum([x > 0 for x in questions])
     return counts
 
@@ -26,7 +26,7 @@ def day06b():
         questions = [0] * 26
         for person in group:
             for char in person:
-                questions[ord(char) - 97] += 1
+                questions[ord(char) - ord('a')] += 1
         counts += sum([x == len(group) for x in questions])
     return counts
 
