@@ -7,22 +7,20 @@ def day14a():
 	memory = {}
 
 	def add_mask(value):
-		retval = ""
+		result = ""
 		for i in range(len(mask)):
 			if mask[i] == "X":
-				retval += value[i]
+				result += value[i]
 			else:
-				retval += mask[i]
-		return int(retval, 2)
+				result += mask[i]
+		return int(result, 2)
 	
 	for instr in instructions:
 		if instr[0] == "mask":
 			mask = instr[1]
 		else:
 			location = int(instr[0][4:-1])
-			value = f"{int(instr[1]):b}"
-			while len(value) < 36:
-				value = "0" + value
+			value = f"{int(instr[1]):036b}"
 			memory[location] = add_mask(value)
 	
 	return sum(memory.values())
@@ -38,21 +36,21 @@ def day14b():
 
 	def add_mask(location, value):
 		nonlocal memory
-		retval = ""
+		result = ""
 		for i in range(len(mask)):
 			if mask[i] == "0":
-				retval += location[i]
+				result += location[i]
 			else:
-				retval += mask[i]
+				result += mask[i]
 		
-		xcount = retval.count("X")
+		xcount = result.count("X")
 		for i in range(2**xcount):
 			adj = f"{i:b}"
 			while len(adj) < xcount:
 				adj = "0" + adj
 			c = 0
 			newvalue = ""
-			for char in retval:
+			for char in result:
 				if char == "X":
 					newvalue += adj[c]
 					c += 1
@@ -64,10 +62,8 @@ def day14b():
 		if instr[0] == "mask":
 			mask = instr[1]
 		else:
-			location = f"{int(instr[0][4:-1]):b}"
+			location = f"{int(instr[0][4:-1]):036b}"
 			value = int(instr[1])
-			while len(location) < 36:
-				location = "0" + location
 			add_mask(location, value)
 	return sum(memory.values())
 
