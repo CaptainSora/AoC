@@ -12,7 +12,6 @@ def day15a():
 				prev += 1
 			speak.append(prev)
 
-		
 	return speak[-1]
 	
 
