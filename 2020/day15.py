@@ -15,7 +15,7 @@ def day15a():
 	return speak[-1]
 	
 
-# WARNING: CAN TAKE A FEW SECONDS, uncomment print lines for verification
+# WARNING: CAN TAKE 20 SECONDS, uncomment print lines for verification
 def day15b():
 	instr = [int(num) for num in "8,13,1,0,18,9".split(",")]
 	
