@@ -9,6 +9,3 @@ def initialize(year, day):
             f'\t\tpass\n\n'
             f'print(day{day:02}a())\n'
         )
-
-for day in range(5, 26):
-    initialize(2022, day)
