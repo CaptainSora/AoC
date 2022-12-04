@@ -34,7 +34,6 @@ def day19ax():
 		else:
 			return [ret1]
 
-
 	inprogress = [[0]]
 	valid = []
 	while len(inprogress) > 0:
@@ -201,4 +200,5 @@ def day19b():
 	return counter
 
 
+print(day19a())
 print(day19b())

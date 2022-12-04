@@ -63,4 +63,6 @@ def day12b():
 
 	return abs(pos[0]) + abs(pos[1])
 
+
+print(day12a())
 print(day12b())

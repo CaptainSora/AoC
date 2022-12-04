@@ -69,4 +69,6 @@ def day07b():
 		workers[worker_index] = [next_proj, proj_dur]
 	return time
 
+
+print(day07a())
 print(day07b())

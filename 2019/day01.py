@@ -19,4 +19,6 @@ def day01b():
             fuel = int(fuel/3)-2
     return total_fuel
 
+
+print(day01a())
 print(day01b())

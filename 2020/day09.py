@@ -38,4 +38,6 @@ def day09b():
 				return min(contig) + max(contig)
 		length += 1
 
+
+print(day09a())
 print(day09b())

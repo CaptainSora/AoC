@@ -40,5 +40,7 @@ def day08b():
         
     return output
 
+
+print(day08a())
 print(day08b())
             

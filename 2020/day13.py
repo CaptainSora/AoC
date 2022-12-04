@@ -1,5 +1,6 @@
 from math import ceil
 
+
 def day13a():
 	with open("2020/day13_input.txt", "r") as f:
 		dep_time, IDs = f.read().strip().split('\n')
@@ -38,4 +39,5 @@ def day13b():
 	return time
 
 
+print(day13a())
 print(day13b())

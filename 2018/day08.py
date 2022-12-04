@@ -46,4 +46,6 @@ def day08b():
 	
 	return node(0)[1]
 
+
+print(day08a())
 print(day08b())

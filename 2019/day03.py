@@ -170,4 +170,6 @@ def day03b():
     
     return mindist
 
+
+print(day03a())
 print(day03b())

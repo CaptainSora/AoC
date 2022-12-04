@@ -1,5 +1,3 @@
-from pprint import pprint
-
 def day03a():
     target = 325489
     i = 3
@@ -43,4 +41,6 @@ def day03b():
         grid[pos[1]][pos[0]] = value
     return value
 
+
+print(day03a())
 print(day03b())

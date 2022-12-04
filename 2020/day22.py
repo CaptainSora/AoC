@@ -71,4 +71,6 @@ def day22b():
 	final = p1 + p2
 	return sum([final[i] * (len(final) - i) for i in range(len(final))])
 
+
+print(day22a())
 print(day22b())

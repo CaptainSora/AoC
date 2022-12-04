@@ -24,7 +24,6 @@ def day14a():
 			memory[location] = add_mask(value)
 	
 	return sum(memory.values())
-	
 
 def day14b():
 	with open("2020/day14_input.txt", "r") as f:
@@ -67,4 +66,6 @@ def day14b():
 			add_mask(location, value)
 	return sum(memory.values())
 
+
+print(day14a())
 print(day14b())

@@ -53,4 +53,6 @@ def day06b():
                 counter += 1
     return counter
 
+
+print(day06a())
 print(day06b())

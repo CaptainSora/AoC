@@ -35,7 +35,6 @@ def valid2(value, rules):
 		validlist.append(rulevalid)
 	return validlist
 
-
 def day16b():
 	with open("2020/day16_input.txt", "r") as f:
 		rules, myticket, othertickets = f.read().strip().split('\n\n')
@@ -80,6 +79,5 @@ def day16b():
 	return fieldprod
 
 
-
-
+print(day16a())
 print(day16b())

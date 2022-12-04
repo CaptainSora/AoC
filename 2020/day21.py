@@ -1,5 +1,6 @@
 from itertools import permutations
 
+
 def day21a():
 	with open("2020/day21_input.txt", "r") as f:
 		ingrlist = [row.split(' (contains ')
@@ -13,9 +14,6 @@ def day21a():
 			all_ingr.add(n)
 		for g in ingrlist[i][1]:
 			all_agn.add(g)
-	
-	# ingredients = []
-	# allergens = {}
 
 	all_ingr = list(all_ingr)
 	all_agn = list(all_agn)
@@ -36,7 +34,7 @@ def day21a():
 
 	return counter
 
-	
+
 def day21b():
 	with open("2020/day21_input.txt", "r") as f:
 		ingrlist = [row.split(' (contains ')

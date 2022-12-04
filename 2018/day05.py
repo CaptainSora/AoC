@@ -28,4 +28,6 @@ def day05b():
         minlength = min(minlength, len(new_cmp))
     return minlength
 
+
+print(day05a())
 print(day05b())

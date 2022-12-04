@@ -19,8 +19,9 @@ def day25a():
 	cloop = get_loop_size(cpub)
 	return transform(dpub, cloop)
 
-
 def day25b():
 	return True
 
+
 print(day25a())
+print(day25b())

@@ -31,4 +31,6 @@ def day02b():
             if diff > 0:
                 return ''.join([boxes[i][:diff], boxes[i][diff+1:]])
 
+
+print(day02a())
 print(day02b())

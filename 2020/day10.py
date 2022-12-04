@@ -8,7 +8,6 @@ def day10a():
 		diff[adapters[a] - adapters[a-1]] += 1
 	return diff[1] * diff[3]
 
-
 def day10b():
 	with open("2020/day10_input.txt", "r") as f:
 		adapters = [int(num) for num in f.read().strip().split('\n')]
@@ -27,4 +26,5 @@ def day10b():
 	return combos[-1]
 
 
+print(day10a())
 print(day10b())

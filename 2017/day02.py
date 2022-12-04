@@ -25,4 +25,6 @@ def day02b():
                     checksum += int(row[i] / row[j])
     return checksum
 
+
+print(day02a())
 print(day02b())

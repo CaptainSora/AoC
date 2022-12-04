@@ -76,6 +76,7 @@ def day23b():
 		# new current cup
 		curcup = linkedlist[curcup]
 	return linkedlist[1] * linkedlist[linkedlist[1]]
-		
 
+
+print(day23a())
 print(day23b())

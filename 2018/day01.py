@@ -19,4 +19,6 @@ def day01b():
         if pos >= len(freqs):
             pos = 0
 
+
+print(day01a())
 print(day01b())

@@ -30,5 +30,7 @@ def day06b():
         counts += sum([x == len(group) for x in questions])
     return counts
 
+
+print(day06a())
 print(day06b())
         

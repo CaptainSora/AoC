@@ -1,6 +1,7 @@
 from copy import deepcopy
 from itertools import product
 
+
 def day17a():
 	with open("2020/day17_input.txt", "r") as f:
 		instr = f.read().strip().split('\n')
@@ -257,4 +258,6 @@ def day17b3():
 	
 	return len([k for k in active.keys() if active[k][0]])
 
+
+print(day17a())
 print(day17b3())

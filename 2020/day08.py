@@ -1,5 +1,6 @@
 from copy import deepcopy
 
+
 def day08a():
     with open("2020/day08_input.txt", 'r') as f:
         instr = [
@@ -61,4 +62,5 @@ def day08b():
                 print("Houston we have a problem")
 
 
+print(day08a())
 print(day08b())

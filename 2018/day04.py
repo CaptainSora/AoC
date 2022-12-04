@@ -56,4 +56,6 @@ def day04b():
             maxsleep = v
     return int(sleepyguard[1:]) * maxsleep.index(max(maxsleep))
 
+
+print(day04a())
 print(day04b())

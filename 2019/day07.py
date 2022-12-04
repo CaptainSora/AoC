@@ -201,5 +201,7 @@ def day07b():
         max_final_output = max(max_final_output, last_out)
     return max_final_output
 
+
+print(day07a())
 print(day07b())
     

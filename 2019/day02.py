@@ -46,4 +46,6 @@ def day02b():
     print("Help")
     return -1
 
+
+print(day02a())
 print(day02b())

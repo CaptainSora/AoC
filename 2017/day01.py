@@ -21,4 +21,6 @@ def day01b():
     
     return total
 
+
+print(day01a())
 print(day01b())

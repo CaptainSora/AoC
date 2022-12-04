@@ -32,4 +32,6 @@ def day05b():
         seats.append(8 * row + col)
     return min([x+1 for x in seats if x+1 not in seats])
 
+
+print(day05a())
 print(day05b())

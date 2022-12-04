@@ -39,4 +39,6 @@ def day06b():
                 break
     return down_transfers + santa_path.index(cur_pos) - 1
 
+
+print(day06a())
 print(day06b())

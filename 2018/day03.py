@@ -44,4 +44,6 @@ def day03b():
             uniq.add(claim[0])
     return list(uniq)[0]
 
+
+print(day03a())
 print(day03b())

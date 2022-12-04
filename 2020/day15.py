@@ -13,7 +13,6 @@ def day15a():
 			speak.append(prev)
 
 	return speak[-1]
-	
 
 # WARNING: CAN TAKE 20 SECONDS, uncomment print lines for verification
 def day15b():
@@ -40,4 +39,6 @@ def day15b():
 
 	return last
 
+
+print(day15a())
 print(day15b())

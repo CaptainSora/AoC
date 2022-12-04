@@ -2,9 +2,14 @@ from copy import deepcopy
 from itertools import product
 from math import prod
 
+
 def day20a():
 	with open("2020/day20_input.txt", "r") as f:
-		tiles = [[t.split(":")[0][5:], [[char for char in row] for row in t.split("\n")[1:]]]
+		tiles = [
+			[
+				t.split(":")[0][5:],
+				[[char for char in row] for row in t.split("\n")[1:]]
+			]
 			for t in f.read().strip().split('\n\n')]
 
 	
@@ -50,7 +55,6 @@ def day20a():
 		matches.append([t1[0], counter])
 	
 	return prod([int(tile[0]) for tile in matches if tile[1] == 2])
-
 
 
 def day20b():
@@ -107,7 +111,9 @@ def day20b():
 	photo = [[[] for _ in range(12)] for _ in range(12)]
 	photoid = [[0 for _ in range(12)] for _ in range(12)]
 	# corner and edges
-	photoid[0][0] = [tile for tile in matches.keys() if len(matches[tile]) == 2][0]
+	photoid[0][0] = [
+		tile for tile in matches.keys() if len(matches[tile]) == 2
+	][0]
 	photo[0][0] = permute(gettile(photoid[0][0]))[7]
 	# printgrid(photo[0][0])
 
@@ -228,4 +234,6 @@ def day20b():
 		return sum([row.count("#") for row in testgrid])
 	return -1
 
+
+print(day20a())
 print(day20b())

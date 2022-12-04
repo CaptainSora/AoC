@@ -1,5 +1,6 @@
 from string import digits, hexdigits
 
+
 def day04a():
     with open("2020/day04_input.txt", 'r') as f:
         passports = [
@@ -51,4 +52,6 @@ def day04b():
             counter += 1
     return counter
 
+
+print(day04a())
 print(day04b())

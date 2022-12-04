@@ -74,4 +74,6 @@ def day11b():
 			return sum([row.count("#") for row in seats])
 		seats = newseats
 
+
+print(day11a())
 print(day11b())

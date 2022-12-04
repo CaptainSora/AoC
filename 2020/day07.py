@@ -63,4 +63,5 @@ def day07b():
     return bagcount['shiny gold']
     
 
+print(day07a())
 print(day07b())

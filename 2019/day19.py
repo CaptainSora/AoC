@@ -6,4 +6,6 @@ def day19b():
 	with open("2019/day19_input.txt", "r") as f:
 		pass
 
+
 print(day19a())
+print(day19b())

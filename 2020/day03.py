@@ -1,5 +1,6 @@
 from math import prod
 
+
 def day03a():
     with open("2020/day03_input.txt", 'r') as f:
         trees = [row.strip() for row in f.read().strip().split('\n')]
@@ -35,4 +36,6 @@ def day03b():
         treecount(1, 2)
     ])
 
+
+print(day03a())
 print(day03b())

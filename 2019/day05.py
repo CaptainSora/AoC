@@ -111,4 +111,6 @@ def day05b():
             print("Houston we have a problem")
             return -1
 
+
+day05a()
 day05b()

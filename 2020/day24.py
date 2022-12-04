@@ -82,4 +82,6 @@ def day24b():
 	
 	return len(black)
 
+
+print(day24a())
 print(day24b())

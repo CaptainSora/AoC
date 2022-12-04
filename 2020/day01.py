@@ -16,5 +16,7 @@ def day01b():
                 if entries[a] + entries[b] + entries[c] == 2020:
                     return entries[a] * entries[b] * entries[c]
 
+
+print(day01a())
 print(day01b())
             

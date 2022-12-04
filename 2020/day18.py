@@ -1,5 +1,6 @@
 from math import prod
 
+
 def day18a():
 	with open("2020/day18_input.txt", "r") as f:
 		lines = f.read().strip().split('\n')
@@ -59,4 +60,6 @@ def day18b():
 
 	return total
 
+
+print(day18a())
 print(day18b())
