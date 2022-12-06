@@ -1,10 +1,19 @@
+from hashlib import md5
+from itertools import count
+
+
 def day04a():
-	with open("2015/day04_input.txt", "r") as f:
-		pass
+	input = "iwrupvqb"
+	for i in count(1):
+		if md5((input + str(i)).encode("utf-8")).hexdigest()[:5] == "00000":
+			return i
+
 
 def day04b():
-	with open("2015/day04_input.txt", "r") as f:
-		pass
+	input = "iwrupvqb"
+	for i in count(1):
+		if md5((input + str(i)).encode("utf-8")).hexdigest()[:6] == "000000":
+			return i
 
 
 print(day04a())
