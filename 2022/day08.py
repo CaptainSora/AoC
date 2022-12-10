@@ -1,6 +1,3 @@
-from itertools import takewhile
-
-
 def day08a():
 	with open("2022/day08_input.txt", "r") as f:
 		trees = [
