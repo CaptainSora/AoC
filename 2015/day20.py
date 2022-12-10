@@ -1,6 +1,6 @@
 from functools import reduce
 from itertools import count
-from math import sqrt
+from math import prod, sqrt
 
 
 def sieve(size, floor=2):
