@@ -21,8 +21,8 @@ def day07a():
 		elif c[0] == "dir":
 			pass
 		else:
-			for i in range(1, len(cur)+1):
-				p = "/".join(cur[:i])
+			for i in range(len(cur)):
+				p = "/".join(cur[:i+1])
 				dirs[p] += int(c[0])
 	return sum([v for k, v in dirs.items() if v <= 100000])
 
@@ -49,8 +49,8 @@ def day07b():
 		elif c[0] == "dir":
 			pass
 		else:
-			for i in range(1, len(cur)+1):
-				p = "/".join(cur[:i])
+			for i in range(len(cur)):
+				p = "/".join(cur[:i+1])
 				dirs[p] += int(c[0])
 	needed = 30000000 - (70000000 - dirs["."])
 	return sorted([v for k, v in dirs.items() if v >= needed])[0]
