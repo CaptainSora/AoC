@@ -1,4 +1,3 @@
-from collections import deque
 from queue import PriorityQueue
 
 
@@ -34,7 +33,7 @@ def day19b():
 	seen = set()
 	q = PriorityQueue()
 	q.put_nowait((len(source), 0, source))
-	while deque:
+	while not q.empty():
 		(_, steps, molecule) = q.get_nowait()
 		for k, v in repl.items():
 			start = molecule.find(k)
