@@ -1,11 +1,10 @@
-from collections import deque
 from math import prod
 
 
 class Monkey:
 	def __init__(self, infostr):
 		info = infostr.strip().replace(",", "").split("\n")
-		self.items = deque([int(num) for num in info[1].split()[2:]])
+		self.items = [int(num) for num in info[1].split()[:1:-1]]
 		self.opstr = info[2].split(" = ")[1]
 		self.test = int(info[3].split()[-1])
 		self.true = int(info[4].split()[-1])
@@ -15,7 +14,7 @@ class Monkey:
 	def inspect(self, worrymod=0):
 		# Requires self.items to not be empty
 		self.inspected += 1
-		old = self.items.popleft()
+		old = self.items.pop()
 		old = eval(self.opstr)
 		if worrymod:
 			old %= worrymod
