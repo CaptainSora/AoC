@@ -24,7 +24,7 @@ def day07a():
 			for i in range(len(cur)):
 				p = "/".join(cur[:i+1])
 				dirs[p] += int(c[0])
-	return sum([v for k, v in dirs.items() if v <= 100000])
+	return sum([v for v in dirs.values() if v <= 100000])
 
 def day07b():
 	with open("2022/day07_input.txt", "r") as f:
@@ -53,7 +53,7 @@ def day07b():
 				p = "/".join(cur[:i+1])
 				dirs[p] += int(c[0])
 	needed = 30000000 - (70000000 - dirs["."])
-	return sorted([v for k, v in dirs.items() if v >= needed])[0]
+	return sorted([v for v in dirs.values() if v >= needed])[0]
 
 
 print(day07a())
