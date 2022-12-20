@@ -30,9 +30,9 @@ def day08b():
 	
 	def view(h, treeline):
 		v = 0
-		for idx in range(len(treeline)):
+		for t in treeline:
 			v += 1
-			if treeline[idx] >= h:
+			if t >= h:
 				break
 		return v
 
