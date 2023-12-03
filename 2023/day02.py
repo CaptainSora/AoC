@@ -7,6 +7,7 @@ def day02a():
 		header, draws = game.strip().split(": ")
 		game_id = int(header.split()[1])
 		draws = draws.split("; ")
+		# Try for-else block for fun :)
 		for draw in draws:
 			colors = draw.split(", ")
 			for color in colors:
@@ -38,6 +39,3 @@ def day02b():
 
 print(day02a())
 print(day02b())
-
-
-### Rank 326!
