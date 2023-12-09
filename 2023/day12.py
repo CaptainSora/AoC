@@ -2,6 +2,7 @@ def day12a():
 	with open("2023/day12_input.txt", "r") as f:
 		pass
 
+
 def day12b():
 	with open("2023/day12_input.txt", "r") as f:
 		pass

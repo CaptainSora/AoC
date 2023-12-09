@@ -7,6 +7,7 @@ def day01a():
 		calibration += 10 * nums[0] + nums[-1]
 	return calibration
 
+
 def day01b():
 	with open("2023/day01_input.txt", "r") as f:
 		lines = f.read().strip().split("\n")
