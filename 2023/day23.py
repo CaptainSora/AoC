@@ -139,9 +139,6 @@ def day23b():
 		paths[id_pos][is_pos] = steps
 		# Add to frontier
 		frontier.extend([(id_pos, pos, 1, set([id_pos])) for pos in next_steps])
-	for k, v in paths.items():
-		print(k, v)
-	# print(paths)
 	
 	# Undirected cyclic graph, use fully exhaustive graph search
 	visited = {pos: False for pos in paths}
